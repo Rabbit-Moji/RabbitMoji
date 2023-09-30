@@ -1,14 +1,30 @@
 from gtts import gTTS
 import os
 
-# Text to be spoken
-text = "Hello user, welcome to my channel"
+# Read the content of "moji.txt"
+with open("moji.txt", "r") as file:
+    text = file.read()
 
-# Create a gTTS object
-tts = gTTS(text)
+# Convert text to speech
+tts = gTTS("Hello users,Welcome to my facebook clone tool")
+tts.save("output.mp3")
 
-# Save the audio file
-tts.save("welcome.mp3")
+# Play the generated audio
+os.system("mpv output.mp3")
 
-# Play the audio using a Termux command
-os.system("termux-media-player play welcome.mp3")
+
+import time
+
+def loading_animation():
+    frames = [
+        "⠀⠀⠀⠀  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣶⣿⣿⣿⣶⣶⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣿⣿⣿⣿⣿⣷⣶⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+            ]
+
+    for frame in frames:
+        print(frame)
+        time.sleep(0.1)
+
+loading_animation()
+print("\n                               Checking update ... ")
+print("")
+  ⠀⠀⠀⠀⠀⠀⠀⠀  
