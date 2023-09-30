@@ -27,4 +27,3 @@ def loading_animation():
 loading_animation()
 print("\n                               Checking update ... ")
 print("")
-  ⠀⠀⠀⠀⠀⠀⠀⠀  
