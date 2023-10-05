@@ -5,4 +5,4 @@ termux-media-player
 git clone https://github.com/Rabbit-Moji/RabbitMoji
 cd RabbitMoji
 git pull
-python MOJI.py
+python clone.py
